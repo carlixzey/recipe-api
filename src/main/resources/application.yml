@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/optimal
+    username: carlix
+    password: opt!m@l_t3chn0l0gy
+    platform: postgres
+    hikari:      auto-commit: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      
+#logging
+logging: level:
+  netttdddyy.dsproxy.listener.logging:SLF4JQueryLoggingListener: debug
+  org:
+    springframework: INFO
